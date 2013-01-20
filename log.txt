@@ -1,0 +1,104 @@
+
+
+    [ 1276][STAT ] 10:46:48,679 |-INFO in ch.qos.logback.core.joran.action.DefinePropertyAction - About to instantiate property definer of type [eu.mosaic_cloud.tools.transcript.implementations.logback.LogbackJvmPidPropertyDefiner]
+    [ 1276][STAT ] 10:46:48,744 |-INFO in ch.qos.logback.core.joran.action.DefinePropertyAction - Popping property definer for property named [jvm_pid] from the object stack
+    [ 1276][STAT ] 10:46:48,746 |-INFO in ch.qos.logback.core.joran.action.AppenderAction - About to instantiate appender of type [ch.qos.logback.core.ConsoleAppender]
+    [ 1276][STAT ] 10:46:48,755 |-INFO in ch.qos.logback.core.joran.action.AppenderAction - Naming appender as [console]
+    [ 1276][STAT ] 10:46:48,946 |-INFO in ch.qos.logback.classic.joran.action.RootLoggerAction - Setting level of ROOT logger to INFO
+    [ 1276][STAT ] 10:46:48,948 |-INFO in ch.qos.logback.core.joran.action.AppenderRefAction - Attaching appender named [console] to Logger[ROOT]
+    [ 1276][STAT ] 10:46:48,954 |-INFO in ch.qos.logback.classic.joran.JoranConfigurator@12b7414 - Registering current configuration as safe fallback point
+    [ 1276][INFO ][    1075][e.m.c.implementations.basic.BasicComponentHarnessMain   ] preparing class loader...                                                                                                                                        [main                                                    ]
+    [ 1276][INFO ][    1084][e.m.c.implementations.basic.BasicComponentHarnessMain   ] prepared class loader.                                                                                                                                           [main                                                    ]
+    [ 1276][INFO ][    1126][e.m.c.implementations.basic.BasicComponentHarnessMain   ] preparing logger...                                                                                                                                              [main                                                    ]
+    [ 1276][INFO ][    1129][e.m.c.implementations.basic.BasicComponentHarnessMain   ] prepared logging.                                                                                                                                                [main                                                    ]
+    [ 1276][INFO ][    1130][e.m.c.implementations.basic.BasicComponentHarnessMain   ] preparing callbacks provider...                                                                                                                                  [main                                                    ]
+    [ 1276][INFO ][    1134][e.m.c.implementations.basic.BasicComponentHarnessMain   ] prepared callbacks provider.                                                                                                                                     [main                                                    ]
+    [ 1276][INFO ][    1136][e.m.c.implementations.basic.BasicComponentHarnessMain   ] preparing channel...                                                                                                                                             [main                                                    ]
+    [ 1276][INFO ][    1283][e.m.c.implementations.basic.BasicComponentHarnessMain   ] prepared channel.                                                                                                                                                [main                                                    ]
+    [ 1276][INFO ][    1283][e.m.c.implementations.basic.BasicComponentHarnessMain   ] preparing component...                                                                                                                                           [main                                                    ]
+    [ 1276][INFO ][    1543][e.m.c.i.container.CloudletComponent.018b5751            ] created the cloudlet component.                                                                                                                                  [main                                                    ]
+    [ 1276][INFO ][    1552][e.m.c.implementations.basic.BasicComponentHarnessMain   ] prepared component.                                                                                                                                              [main                                                    ]
+    [ 1276][INFO ][    1554][e.m.c.implementations.basic.BasicComponentHarnessMain   ] joining component...                                                                                                                                             [main                                                    ]
+    [ 1276][INFO ][    1734][eu.mosaic_cloud.examples.hello.HelloCloudlet.00953ad9   ] Cloudlet sa initializat cu succes                                                                                                                                [tations.basic.BasicCallbackReactor/007be75d/isolates//01]
+    [ 1276][INFO ][    1743][eu.mosaic_cloud.examples.hello.HelloCloudlet.00953ad9   ] Contextul a fost preluat cu succes                                                                                                                               [tations.basic.BasicCallbackReactor/007be75d/isolates//01]
+    [ 1276][INFO ][    1745][eu.mosaic_cloud.examples.hello.HelloCloudlet.00953ad9   ] Configurare gateway ok                                                                                                                                           [tations.basic.BasicCallbackReactor/007be75d/isolates//01]
+    [ 1276][INFO ][    1884][eu.mosaic_cloud.examples.hello.HelloCloudlet.00953ad9   ] Initializare gateway...OK                                                                                                                                        [tations.basic.BasicCallbackReactor/007be75d/isolates//01]
+    [ 1276][WARN ][    2076][e.m.c.i.container.CloudletComponent.018b5751            ] resolving the interoperability channel endpoint for target `a5e40f0b2c041bc694ace68ace08420d40f9cbc0` failed; ignoring!                                          [tations.basic.BasicCallbackReactor/007be75d/isolates//03]
+    java.lang.Exception: null
+    at eu.mosaic_cloud.cloudlets.implementation.container.CloudletComponent$ChannelFactoryHandler$2.execute(CloudletComponent.java:368) [cloudlets-0.5.1_mosaic_dev-SNAPSHOT-component.jar:na]
+    at eu.mosaic_cloud.cloudlets.implementation.container.CloudletComponent$ChannelFactoryHandler$2.execute(CloudletComponent.java:353) [cloudlets-0.5.1_mosaic_dev-SNAPSHOT-component.jar:na]
+    at eu.mosaic_cloud.cloudlets.implementation.container.CloudletComponentFsm$FsmAccess.execute(CloudletComponentFsm.java:71) [cloudlets-0.5.1_mosaic_dev-SNAPSHOT-component.jar:na]
+    at eu.mosaic_cloud.tools.callbacks.tools.StateMachine$Accessor$1.call(StateMachine.java:237) [cloudlets-0.5.1_mosaic_dev-SNAPSHOT-component.jar:na]
+    at eu.mosaic_cloud.tools.callbacks.tools.StateMachine$Accessor.execute_(StateMachine.java:292) [cloudlets-0.5.1_mosaic_dev-SNAPSHOT-component.jar:na]
+    at eu.mosaic_cloud.tools.callbacks.tools.StateMachine$Accessor.execute(StateMachine.java:232) [cloudlets-0.5.1_mosaic_dev-SNAPSHOT-component.jar:na]
+    at eu.mosaic_cloud.tools.callbacks.tools.StateMachine.execute(StateMachine.java:98) [cloudlets-0.5.1_mosaic_dev-SNAPSHOT-component.jar:na]
+    at eu.mosaic_cloud.cloudlets.implementation.container.CloudletComponentFsm$FsmAccess.trigger(CloudletComponentFsm.java:78) [cloudlets-0.5.1_mosaic_dev-SNAPSHOT-component.jar:na]
+    at eu.mosaic_cloud.cloudlets.implementation.container.CloudletComponentFsm$FsmFutureCompletionAccess$Observer.run(CloudletComponentFsm.java:205) [cloudlets-0.5.1_mosaic_dev-SNAPSHOT-component.jar:na]
+    at eu.mosaic_cloud.tools.callbacks.implementations.basic.BasicCallbackReactor$Scheduler.executeActions(BasicCallbackReactor.java:1252) [cloudlets-0.5.1_mosaic_dev-SNAPSHOT-component.jar:na]
+    at eu.mosaic_cloud.tools.callbacks.implementations.basic.BasicCallbackReactor$SchedulerExecuteAction.run(BasicCallbackReactor.java:1419) [cloudlets-0.5.1_mosaic_dev-SNAPSHOT-component.jar:na]
+    at java.util.concurrent.ThreadPoolExecutor.runWorker(Unknown Source) [na:1.7.0_01]
+    at java.util.concurrent.ThreadPoolExecutor$Worker.run(Unknown Source) [na:1.7.0_01]
+    at java.lang.Thread.run(Unknown Source) [na:1.7.0_01]
+    at eu.mosaic_cloud.tools.threading.implementations.basic.BasicThreadingContext$BasicThread.run(BasicThreadingContext.java:440) [cloudlets-0.5.1_mosaic_dev-SNAPSHOT-component.jar:na]
+    [ 1276][WARN ][    2090][e.m.c.implementations.basic.BasicComponentHarnessMain   ] resolving the interoperability channel endpoint for target `a5e40f0b2c041bc694ace68ace08420d40f9cbc0` failed; ignoring!                                          [tations.basic.BasicCallbackReactor/007be75d/isolates//03]
+    java.lang.Exception: null
+    at eu.mosaic_cloud.cloudlets.implementation.container.CloudletComponent$ChannelFactoryHandler$2.execute(CloudletComponent.java:368) [cloudlets-0.5.1_mosaic_dev-SNAPSHOT-component.jar:na]
+    at eu.mosaic_cloud.cloudlets.implementation.container.CloudletComponent$ChannelFactoryHandler$2.execute(CloudletComponent.java:353) [cloudlets-0.5.1_mosaic_dev-SNAPSHOT-component.jar:na]
+    at eu.mosaic_cloud.cloudlets.implementation.container.CloudletComponentFsm$FsmAccess.execute(CloudletComponentFsm.java:71) [cloudlets-0.5.1_mosaic_dev-SNAPSHOT-component.jar:na]
+    at eu.mosaic_cloud.tools.callbacks.tools.StateMachine$Accessor$1.call(StateMachine.java:237) [cloudlets-0.5.1_mosaic_dev-SNAPSHOT-component.jar:na]
+    at eu.mosaic_cloud.tools.callbacks.tools.StateMachine$Accessor.execute_(StateMachine.java:292) [cloudlets-0.5.1_mosaic_dev-SNAPSHOT-component.jar:na]
+    at eu.mosaic_cloud.tools.callbacks.tools.StateMachine$Accessor.execute(StateMachine.java:232) [cloudlets-0.5.1_mosaic_dev-SNAPSHOT-component.jar:na]
+    at eu.mosaic_cloud.tools.callbacks.tools.StateMachine.execute(StateMachine.java:98) [cloudlets-0.5.1_mosaic_dev-SNAPSHOT-component.jar:na]
+    at eu.mosaic_cloud.cloudlets.implementation.container.CloudletComponentFsm$FsmAccess.trigger(CloudletComponentFsm.java:78) [cloudlets-0.5.1_mosaic_dev-SNAPSHOT-component.jar:na]
+    at eu.mosaic_cloud.cloudlets.implementation.container.CloudletComponentFsm$FsmFutureCompletionAccess$Observer.run(CloudletComponentFsm.java:205) [cloudlets-0.5.1_mosaic_dev-SNAPSHOT-component.jar:na]
+    at eu.mosaic_cloud.tools.callbacks.implementations.basic.BasicCallbackReactor$Scheduler.executeActions(BasicCallbackReactor.java:1252) [cloudlets-0.5.1_mosaic_dev-SNAPSHOT-component.jar:na]
+    at eu.mosaic_cloud.tools.callbacks.implementations.basic.BasicCallbackReactor$SchedulerExecuteAction.run(BasicCallbackReactor.java:1419) [cloudlets-0.5.1_mosaic_dev-SNAPSHOT-component.jar:na]
+    at java.util.concurrent.ThreadPoolExecutor.runWorker(Unknown Source) [na:1.7.0_01]
+    at java.util.concurrent.ThreadPoolExecutor$Worker.run(Unknown Source) [na:1.7.0_01]
+    at java.lang.Thread.run(Unknown Source) [na:1.7.0_01]
+    at eu.mosaic_cloud.tools.threading.implementations.basic.BasicThreadingContext$BasicThread.run(BasicThreadingContext.java:440) [cloudlets-0.5.1_mosaic_dev-SNAPSHOT-component.jar:na]
+    [ 1276][!!] ----------------------------------------
+    java.lang.Exception
+    at eu.mosaic_cloud.cloudlets.implementation.container.CloudletComponent$ChannelFactoryHandler$2.execute(CloudletComponent.java:368)
+    at eu.mosaic_cloud.cloudlets.implementation.container.CloudletComponent$ChannelFactoryHandler$2.execute(CloudletComponent.java:353)
+    at eu.mosaic_cloud.cloudlets.implementation.container.CloudletComponentFsm$FsmAccess.execute(CloudletComponentFsm.java:71)
+    at eu.mosaic_cloud.tools.callbacks.tools.StateMachine$Accessor$1.call(StateMachine.java:237)
+    at eu.mosaic_cloud.tools.callbacks.tools.StateMachine$Accessor.execute_(StateMachine.java:292)
+    at eu.mosaic_cloud.tools.callbacks.tools.StateMachine$Accessor.execute(StateMachine.java:232)
+    at eu.mosaic_cloud.tools.callbacks.tools.StateMachine.execute(StateMachine.java:98)
+    at eu.mosaic_cloud.cloudlets.implementation.container.CloudletComponentFsm$FsmAccess.trigger(CloudletComponentFsm.java:78)
+    at eu.mosaic_cloud.cloudlets.implementation.container.CloudletComponentFsm$FsmFutureCompletionAccess$Observer.run(CloudletComponentFsm.java:205)
+    at eu.mosaic_cloud.tools.callbacks.implementations.basic.BasicCallbackReactor$Scheduler.executeActions(BasicCallbackReactor.java:1252)
+    at eu.mosaic_cloud.tools.callbacks.implementations.basic.BasicCallbackReactor$SchedulerExecuteAction.run(BasicCallbackReactor.java:1419)
+    at java.util.concurrent.ThreadPoolExecutor.runWorker(Unknown Source)
+    at java.util.concurrent.ThreadPoolExecutor$Worker.run(Unknown Source)
+    at java.lang.Thread.run(Unknown Source)
+    at eu.mosaic_cloud.tools.threading.implementations.basic.BasicThreadingContext$BasicThread.run(BasicThreadingContext.java:440)
+    [ 1276][!!] ----------------------------------------
+    [ 1276][!!] aborting...
+    [ 1276][!!] registering halt thread...
+    [ 1276][!!] starting exit thread...
+    [ 1276][!!] exiting...
+    [ 1276][!!] waiting...
+    [ 1276][!!] waiting...
+    [ 1276][!!] waiting...
+    [ 1276][!!] waiting...
+    [ 1276][!!] waiting...
+    [ 1276][!!] waiting...
+    [ 1276][!!] waiting...
+    [ 1276][!!] waiting...
+    [ 1276][!!] waiting...
+    [ 1276][!!] waiting...
+    [ 1276][!!] waiting...
+    [ 1276][!!] waiting...
+    [ 1276][!!] waiting...
+    [ 1276][!!] waiting...
+    [ 1276][!!] waiting...
+    [ 1276][!!] waiting...
+    [ 1276][!!] waiting...
+    [ 1276][!!] waiting...
+    [ 1276][!!] waiting...
+    [ 1276][!!] waiting...
+    [ 1276][!!] halting...
+
+
